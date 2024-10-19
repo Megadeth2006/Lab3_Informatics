@@ -85,7 +85,7 @@ def check(main_test, c):
 
     for i in string1:
     
-        if (len(re.findall(r"\b\w+[уеёыаоэяию]{2}\w+\b", i, re.IGNORECASE))) == 1:
+        if (len(re.findall(r"\b\w*[уеёыаоэяию]{2}\w*\b", i, re.IGNORECASE))) == 1:
             count_glasn.append(1)
         else:
             count_glasn.append(0)
